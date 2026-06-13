@@ -119,3 +119,4 @@ class PushoverNotifications(Plugin):
             'priority': self.get_option('priority', event.project),
             }
         requests.post('https://api.pushover.net/1/messages.json', params=params)
+
